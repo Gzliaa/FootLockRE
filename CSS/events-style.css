@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Header */
+
+.header-logo {
+    width: 20rem;
+    object-fit: contain;
+}
+
+header {
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.nav-bar:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ============================================ */
+
+.current-events{
+    margin: 4%;
+}
+
+.current-events h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.current-events img:hover{
+    filter: brightness(75%); 
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.upcoming-events{
+    margin: 4%;
+}
+
+.upcoming-events h1{
+    text-align: center;
+    margin: 4%;
+}
+
+.upcoming-events img:hover{
+    filter: brightness(75%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ==================Footer=================== */
+footer {
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loc-foot-text {
+    width: 50%;
+    object-fit: contain;
+}
+
+.icon-list {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 15rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-bar {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .loc-foot-text {
+        width: 100%;
+    }
+
+    .icon-list {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+}

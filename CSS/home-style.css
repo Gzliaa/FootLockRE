@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+* {box-sizing:border-box}
+
+h2{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+    font-size: x-large;
+}
+
+h4{
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/*=====================Header===================== */
+
+.header-logo {
+    width: 20rem;
+    object-fit: contain;
+}
+
+header {
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.nav-bar:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* ============================================ */
+
+.latest-release{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%
+}
+
+.latest-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.latest-item{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    width: 20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+.best-sellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+ol{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+
+.best-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    width: 20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+/* ==================Footer=================== */
+footer{
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loc-foot-text {
+    width: 50%;
+    object-fit: contain;
+}
+
+.icon-list{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 15rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-bar {
+        font-size: 1.2rem;
+    }
+
+    .latest-list,
+    ol {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .latest-item,
+    .best-item {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 3%;
+    }
+
+    h2{
+        display: flex;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .loc-foot-text {
+        width: 100%;
+    }
+
+    .icon-list {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+}

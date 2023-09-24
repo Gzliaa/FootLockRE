@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+* {box-sizing:border-box}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Header */
+
+.header-logo {
+    width: 20rem;
+    object-fit: contain;
+}
+
+header {
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.nav-bar:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ============================================ */
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #797979;
+    background-color: #797979;
+}
+
+.parent {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.filter-shoes{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.list-filter{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+.brand:hover{
+    color: #9385FC;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.item-list-shoes {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.list-shoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-shoes{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10%;
+    width: 30%;
+    height: 30%;
+}
+
+.item-shoes img{
+    width: 8vw;
+    height: 7.8vh;
+}
+
+.item-shoes h3{
+    max-width: 2;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+ol a{
+    display: inline-block;
+    margin: 2%;
+}
+
+/* ==================Footer=================== */
+footer {
+    position: sticky;
+    background-color: #9385FC;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loc-foot-text {
+    width: 50%;
+    object-fit: contain;
+}
+
+.icon-list {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 15rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-bar {
+        font-size: 1.2rem;
+    }
+
+    .parent {
+        flex-direction: column;
+    }
+
+    .filter-shoes {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .item-list-shoes {
+        width: 100%;
+    }
+
+    .list-shoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item-shoes {
+        width: 45%;
+        height: auto;
+        margin: 2%;
+    }
+
+    .item-shoes img {
+        width: 100%;
+        height: auto;
+    }
+    
+    footer {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .loc-foot-text {
+        width: 100%;
+    }
+
+    .icon-list {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+}
